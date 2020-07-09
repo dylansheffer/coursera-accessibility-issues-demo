@@ -10,4 +10,4 @@ business: 'Lion Creative'
 jobtitle: 'Creative Director'
 ---
 
-> Sales bandwidth business model canvas android infographic leverage prototype traction buzz. Founders stock startup incubator gamification series A financing churn rate gen-z ecosystem bootstrapping branding. Interaction design partnership technology. Hackathon infrastructure bandwidth bootstrapping.
+> Donec sit amet risus est. Curabitur lorem odio, auctor non felis eu, venenatis luctus nisl. Aliquam sed diam nec ipsum dapibus aliquet. Mauris ultricies velit eget metus consectetur elementum. Maecenas feugiat lacus id urna pulvinar, eget porta magna ornare. Nulla ut blandit massa. Nam sed diam convallis, congue felis et, blandit velit.

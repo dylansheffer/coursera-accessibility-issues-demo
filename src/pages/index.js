@@ -19,10 +19,9 @@ const Home = (props) => {
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Serif - Gatsby Small Business Theme.</h1>
+          <h1>Serif - Accessibility Testing Business Site.</h1>
           <p>
-            Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This
-            is a beautiful and artfully designed starting theme.
+            We will be testing this site against Micosoft's Accessibility Insights plugin. Throughout the course, we will uncover and document this sites accessibility issues.
           </p>
         </div>
       </div>
