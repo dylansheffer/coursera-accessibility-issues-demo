@@ -21,7 +21,10 @@ const Home = (props) => {
         <div className="container">
           <h1>Serif - Accessibility Testing Business Site.</h1>
           <p>
-            We will be testing this site against Micosoft's Accessibility Insights plugin. Throughout the course, we will uncover and document this sites accessibility issues.
+            We will be testing this site against
+            {' '}
+            <a href="https://accessibilityinsights.io/docs/en/web/overview">Microsoft's Accessibility Insights plugin</a>
+            . Throughout the course, we will uncover and document this sites accessibility issues.
           </p>
         </div>
       </div>

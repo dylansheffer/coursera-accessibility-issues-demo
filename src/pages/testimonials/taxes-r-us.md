@@ -1,6 +1,6 @@
 ---
-path: '/testimonials/thaistyle-asian'
-title: 'Thaistyle Asian'
+path: '/testimonials/taxes-r-us'
+title: 'Taxes R Us'
 date: 2018-11-28T15:04:35+10:00
 draft: false
 image: ''
