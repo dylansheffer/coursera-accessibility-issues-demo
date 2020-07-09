@@ -10,7 +10,37 @@ const Contact = props => (
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1>Contact</h1>
+            <div className="title-1">Contact</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="container bad-form">
+      <div className="row">
+        <div className="col-12">
+          <div className="title-3">Send Us A Message</div>
+          <div>
+            <div className="row">
+              <div className="col-6">
+                <p>Name</p>
+                <input type="text" autoComplete="serif-name" />
+              </div>
+              <div className="col-6">
+                <p>Email</p>
+                <input type="text" autoComplete="email" />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <p>Body</p>
+              <textarea name="" id="" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <div className="button" onClick={() => alert('Message Sent')}>Send Message</div>
+            </div>
           </div>
         </div>
       </div>
@@ -21,7 +51,7 @@ const Contact = props => (
           <Call button={false} />
         </div>
         <div className="col-8">
-          <h4 className="mt-4">Business Hours</h4>
+          <div className="title-3 mt-4">Business Hours</div>
           <table className="table table-sm opening-hours-table">
             <tbody>
               <tr>

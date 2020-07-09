@@ -11,9 +11,9 @@ const SEO = props => (
       return (
         <Helmet
           htmlAttributes={{
-            lang: 'en',
+            // lang: 'en',
           }}
-          title={title}
+          // title={title}
           titleTemplate={`%s - ${data.site.siteMetadata.title}`}
           link={[
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },

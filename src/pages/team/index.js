@@ -32,7 +32,6 @@ const Team = (props) => {
                     {edge.node.frontmatter.image && (
                       <div className="card-image">
                         <img
-                          alt={edge.node.frontmatter.title}
                           className="img-fluid mb-2"
                           src={edge.node.frontmatter.image}
                         />
