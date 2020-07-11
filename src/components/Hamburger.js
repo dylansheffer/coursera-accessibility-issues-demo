@@ -17,7 +17,7 @@ class Hamburger extends React.Component {
 
   render() {
     return (
-      <button
+      <div
         id="toggle-main-menu-mobile"
         className={`hamburger hamburger--slider ${
           this.state.hamburgerActive ? 'is-active' : ''
@@ -28,7 +28,7 @@ class Hamburger extends React.Component {
         <span className="hamburger-box">
           <span className="hamburger-inner" />
         </span>
-      </button>
+      </div>
     );
   }
 }

@@ -1,4 +1,5 @@
 .button {
+  animation: jittery 4s infinite;
   white-space: nowrap;
   display: inline-block;
   height: 40px;
@@ -17,9 +18,37 @@
   transition: all 0.15s ease;
   &:hover {
     color: #fff;
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 30%);
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
   }
+}
+
+@keyframes jittery {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
 }

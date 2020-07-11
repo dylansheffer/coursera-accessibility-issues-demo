@@ -1,6 +1,7 @@
 .main-menu {
   height: inherit;
   display: none;
+  z-index: 99;
   @include media-breakpoint-up(md) {
     display: block;
   }

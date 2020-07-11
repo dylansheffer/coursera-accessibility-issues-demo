@@ -24,7 +24,7 @@ const Home = (props) => {
             We will be testing this site against
             {' '}
             <a href="https://accessibilityinsights.io/docs/en/web/overview">Microsoft's Accessibility Insights plugin</a>
-            . Throughout the course, we will uncover and document this sites accessibility issues.
+            . Throughout the course, we will uncover and document the site's accessibility issues.
           </p>
         </div>
       </div>
@@ -46,6 +46,7 @@ const Home = (props) => {
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
                   </h2>
                   <p>{edge.node.excerpt}</p>
+                  <p><Link to={edge.node.frontmatter.path}>Read More...</Link></p>
                 </div>
               </div>
             </div>
@@ -64,7 +65,7 @@ const Home = (props) => {
             <h3 className="title-3 text-dark mb-4">Our Features</h3>
           </div>
           {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
+            <div key={edge.node.id} className="col-4">
               <div className="feature">
                 {edge.node.image && (
                   <div className="feature-image">

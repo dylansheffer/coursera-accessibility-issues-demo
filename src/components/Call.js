@@ -20,7 +20,7 @@ const Call = props => (
     {props.button && (
       <div className="call-box-bottom">
         <a href="/contact" className="button">
-          Contact
+          Talk to us
         </a>
       </div>
     )}

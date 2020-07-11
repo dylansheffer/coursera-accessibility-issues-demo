@@ -39,7 +39,13 @@ const Contact = props => (
           </div>
           <div className="row">
             <div className="col-12">
-              <div className="button" onClick={() => alert('Message Sent')}>Send Message</div>
+              <a href="#" className="button" onClick={(e) => {
+                e.preventDefault();
+                alert('Message Sent');
+              }}>
+Send Message
+
+              </a>
             </div>
           </div>
         </div>

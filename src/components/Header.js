@@ -14,7 +14,7 @@ class Header extends React.Component {
     };
   }
 
-  toggleMenu = menuActive => {
+  toggleMenu = (menuActive) => {
     this.setState(prevState => ({
       menuActive: !prevState.menuActive,
     }));
@@ -24,14 +24,14 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="container">
-          <div className="logo">
+          <div className="logo" role="navigation">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logo} />
+              <img alt="Serif Homepage" src={logo} />
             </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logoMobile} />
+              <img alt="Serif Homepage" src={logoMobile} />
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
