@@ -15,4 +15,18 @@
     background-size: 60%;
     background-position: 100% -70px;
   }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    > img {
+      display: block;
+      width: 250px;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
 }

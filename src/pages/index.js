@@ -5,6 +5,9 @@ import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
 import { BadForm } from '../components/BadContactForm';
+import GoogleLogo from '../images/client-logos/Google_logo.svg';
+import MicrosoftLogo from '../images/client-logos/Microsoft_logo.svg';
+import WalmartLogo from '../images/client-logos/Walmart_logo.svg';
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -25,7 +28,10 @@ const Home = (props) => {
             We will be testing this site against
             {' '}
             <a href="https://accessibilityinsights.io/docs/en/web/overview">Microsoft's Accessibility Insights plugin</a>
-            . Throughout the course, we will uncover and document the site's accessibility issues.
+            . Throughout the project,
+{' '}
+<span className="bold">we will uncover and document the site's accessibility issues</span>
+.
           </p>
         </div>
       </div>
@@ -47,7 +53,7 @@ const Home = (props) => {
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
                   </h2>
                   <p>{edge.node.excerpt}</p>
-                  <p><Link to={edge.node.frontmatter.path}>Read More...</Link></p>
+                  <p><Link to={edge.node.frontmatter.path}>Read More..</Link></p>
                 </div>
               </div>
             </div>
@@ -83,6 +89,17 @@ const Home = (props) => {
 
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <BadForm />
+      </div>
+
+      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
+        <div>
+          <h3 className="title-3 text-dark mb-4">Satisfied Customers</h3>
+          <div className="logos">
+            <img src={GoogleLogo} />
+            <img src={MicrosoftLogo} />
+            <img src={WalmartLogo} />
+          </div>
+        </div>
       </div>
     </Layout>
   );

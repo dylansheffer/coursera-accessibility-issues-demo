@@ -5,9 +5,9 @@ export const BadForm = () => {
   const [name, setName] = useState(' ');
   const [email, setEmail] = useState(' ');
   const [body, setBody] = useState(' ');
-  const [nameMessage, setNameMessage] = useState('Enter your full name');
-  const [emailMessage, setEmailMessage] = useState('Enter a valid email address');
-  const [bodyMessage, setBodyMessage] = useState('Messages less than 50 characters will not be accepted');
+  const [nameValid, setNameValid] = useState(false);
+  const [emailValid, setEmailValid] = useState(false);
+  const [bodyValid, setBodyValid] = useState(false);
 
   const handleName = (event) => {
     setName(event.target.value);
@@ -20,31 +20,20 @@ export const BadForm = () => {
   };
 
   const validate = () => {
-    let valid = true;
-
-    if (!name.includes(' ')) {
-      setNameMessage('Give me your full name');
-      valid = false;
-    } else {
-      setNameMessage('');
+    if (name.includes(' ')) {
+      setNameValid(true);
     }
 
     const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!emailRegex.test(email)) {
-      setEmailMessage('Invalid email');
-      valid = false;
-    } else {
-      setEmailMessage('');
+    if (emailRegex.test(email)) {
+      setEmailValid(true);
     }
 
-    if (body.length < 50) {
-      setBodyMessage('You have to send me more information');
-      valid = false;
-    } else {
-      setBodyMessage('');
+    if (body.length > 50) {
+      setBodyValid(true);
     }
 
-    return valid;
+    return nameValid && emailValid && bodyValid;
   };
 
   return (
@@ -58,19 +47,19 @@ export const BadForm = () => {
               <div className="col-6">
                 <p>Name</p>
                 <input onChange={handleName} id="name-input" type="text" autoComplete="serif-name" />
-                <p className="small">{nameMessage}</p>
+                <p className={`small ${!nameValid ? 'error' : ''}`}>{!nameValid ? 'Enter your full name' : ''}</p>
               </div>
               <div className="col-6">
                 <p>Email</p>
                 <input onChange={handleEmail} id="email-input" type="text" autoComplete="email" />
-                <p className="small">{emailMessage}</p>
+                <p className={`small ${!emailValid ? 'error' : ''}`}>{!emailValid ? 'Enter a valid email address' : ''}</p>
               </div>
             </div>
           <div className="row">
             <div className="col-12">
               <p>Body</p>
               <textarea onChange={handleBody} name="" id="body-input" />
-              <p className="small">{bodyMessage}</p>
+              <p className={`small ${!bodyValid ? 'error' : ''}`}>{!bodyValid ? 'Messages less than 50 characters will not be accepted' : ''}</p>
             </div>
           </div>
           <div className="row">
