@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
+import { BadForm } from '../components/BadContactForm';
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -78,6 +79,10 @@ const Home = (props) => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
+        <BadForm />
       </div>
     </Layout>
   );

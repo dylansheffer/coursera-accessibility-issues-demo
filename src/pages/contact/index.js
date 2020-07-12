@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 import Call from '../../components/Call';
+import { BadForm } from '../../components/BadContactForm';
 
 const Contact = props => (
   <Layout bodyClass="page-contact">
@@ -15,42 +16,7 @@ const Contact = props => (
         </div>
       </div>
     </div>
-    <div className="container bad-form">
-      <div className="row">
-        <div className="col-12">
-          <div className="title-3">Send Us A Message</div>
-          <div>
-            <div className="row">
-              <div className="col-6">
-                <p>Name</p>
-                <input type="text" autoComplete="serif-name" />
-              </div>
-              <div className="col-6">
-                <p>Email</p>
-                <input type="text" autoComplete="email" />
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <p>Body</p>
-              <textarea name="" id="" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <a href="#" className="button" onClick={(e) => {
-                e.preventDefault();
-                alert('Message Sent');
-              }}>
-Send Message
-
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BadForm />
     <div className="container">
       <div className="row">
         <div className="col-12">
