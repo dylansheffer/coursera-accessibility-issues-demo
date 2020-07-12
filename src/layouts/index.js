@@ -10,7 +10,10 @@ const Layout = props => (
       <SEO />
       <div className={`page${props.bodyClass ? ` ${props.bodyClass}` : ''}`}>
         <div id="wrapper" className="wrapper">
-          {props.children}
+          <a href="#main" className="skip-link">Skip to Main Content</a>
+          <main id="main">
+            {props.children}
+          </main>
           <Header />
         </div>
         <Footer />
