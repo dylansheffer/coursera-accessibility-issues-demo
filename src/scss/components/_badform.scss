@@ -9,4 +9,11 @@
   .error {
     color: $red;
   }
+  .success {
+    color: #3c763d;
+  }
+  .form-message {
+    padding: 10px 0;
+    font-weight: bold;
+  }
 }
