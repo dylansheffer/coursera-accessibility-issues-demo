@@ -19,9 +19,9 @@ const Call = props => (
     </div>
     {props.button && (
       <div className="call-box-bottom">
-        <a href="/contact" className="button">
+        <div onClick={() => window.location.href = '/contact'} className="button">
           Talk to us
-        </a>
+        </div>
       </div>
     )}
   </div>
