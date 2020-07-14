@@ -53,19 +53,19 @@ export const BadForm = () => {
             <form>
             <div className="row">
               <div className="col-6">
-                <p>Name</p>
+                <h6>Name</h6>
                 <input onChange={handleName} id="name-input" type="text" autoComplete="serif-name" />
                 <p className={`small ${!nameValid ? 'error' : ''}`}>{!nameValid ? 'Enter your name' : ''}</p>
               </div>
               <div className="col-6">
-                <p>Email</p>
+                <h6>Email</h6>
                 <input onChange={handleEmail} id="email-input" type="text" autoComplete="email" />
                 <p className={`small ${!emailValid ? 'error' : ''}`}>{!emailValid ? 'Enter a valid email address' : ''}</p>
               </div>
             </div>
           <div className="row">
             <div className="col-12">
-              <p>Body</p>
+              <h6>Body</h6>
               <textarea onChange={handleBody} name="" id="body-input" onBlur={(e) => {
                 e.preventDefault();
                 if (validate()) {
