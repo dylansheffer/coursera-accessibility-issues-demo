@@ -1,7 +1,8 @@
 .button {
   animation: jittery 4s infinite;
-  white-space: nowrap;
-  display: inline-block;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
   height: 40px;
   line-height: 40px;
   padding: 0 14px;
@@ -22,7 +23,10 @@
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
-  }
+	}
+	h5 {
+		margin-bottom: 0;
+	}
 }
 
 @keyframes jittery {
